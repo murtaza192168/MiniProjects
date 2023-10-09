@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    font-weight: bold;
+    color:rgb(5, 53, 101);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("../images/./bkglogin.png");
+    background-position: no-repeat;
+    background-size: cover;
+    backface-visibility: visible;
+    opacity:0.8;
+}
+.container {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    opacity: 50;
+}
+.form-validation {
+    padding: 10px 20px;
+}
+.form-validation h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-field {
+    margin-bottom: 5px;
+
+}
+.form-field label {
+    display: block;
+    color: rgb(5, 53, 101);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-field input {
+    border: solid 1px #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+.form-field input:focus {
+    outline: none;
+}
+.form-field.error input {
+    border-color: var(--error-color);
+}
+.form-field.success input {
+    border-color: var(--success-color);
+}
+.form-field small {
+    color: var(--error-color);
+}
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;   
+}
+
+input.btn {
+    color: black;
+    font-size: 1rem;
+    /* font-stretch: expanded; */
+    font-family: system-ui;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    
+}
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
+}
+
+small > button.btn-toNavigateToLoginPage{
+    padding: 0.15rem;
+    border: none;
+    color:black;
+}
+small > button.btn-toNavigateToLoginPage:hover{
+   cursor: pointer;
+   background-color: rgb(165, 199, 222);
+   
+}
+.sucessful-login{
+    color: #213555;
+    font-size: 3rem;
+    animation-duration: 05s;
+    font-weight: 5rem;
+    font-family: 'Comic Sans', sans-serif;
+}
+em, small > button.btn-toNavigateToLoginPage {
+    color: rgb(23, 21, 21);
+    font-weight: bold;
+}
+.bttn{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}

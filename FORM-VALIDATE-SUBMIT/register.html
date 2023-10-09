@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>    
+<div class="container">
+    <form action="" id="signup" class="form-validation">
+        <h1>Register</h1>
+        <!-- Username field -->
+        <div class="form-field" class="form-field error" class="form-field success">
+            <label for="username">Username</label>
+            <input type="text"  id="username" name="username" autocomplete="off">
+            <small></small>  <!-- small element is used to show the error msg to the user when enters wrong or incomplete data  -->
+        </div>
+    <!-- Email field -->
+        <div class="form-field" class="form-field error" class="form-field success">
+            <label for="email">Email Id</label>
+            <input type="text"  id="email" name="email" autocomplete="off">
+            <small></small>
+        </div>
+    <!-- Password field -->
+        <div class="form-field" class="form-field error" class="form-field success">
+            <label for="password">Password</label>
+            <input type="password"  id="password" name="password" autocomplete="off">
+            <small></small>
+        </div>
+    <!-- Confirm password field -->
+        <div class="form-field" class="form-field error" class="form-field success">
+            <label for="cofirm-password">Confirm Password</label>
+            <input type="password"  id="confirm-password" name="confirm-password" autocomplete="off">
+            <small></small>
+        </div>
+     <!-- Submit -->
+        <div class="form-field bttn">
+            <input type="submit" class="btn"  value="SignUp" autocomplete="off">
+            <small></small>
+        </div>
+    </form>
+    <small id="set"> <em >Already have an account?</em>  <button class="btn-toNavigateToLoginPage" onclick="navigateToLoginPage()">login</button> </small>
+</div>
+<!-- Adding Javascript -->
+<script src="./Javascript/script-signup.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
