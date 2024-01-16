@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+   width:100%;
+   min-height:100vh; 
+   background-image: url("./images/bkground-img.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;   
+   background-position: center;
+   padding: 10px;
+}
+.to-do-list{
+    width: 100%;
+    max-width:540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.to-do-list h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #0d2955;
+}
+.to-do-list img{
+    margin-left: 10px;
+    width: 30px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1e6f1;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+}
+#btn{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 30px;
+    background: #a674c1;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+#btn:hover{
+    background-color: #ac52dd;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    top:12px;
+    left: 8px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("./images/unchk.png");
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color:#566;
+}
+ul li.checked::before{
+    background-image: url("./images/chk.png");
+}
+
+/* javascript created span styling */
+ul li span{
+position: absolute;
+right: 0;
+top: 5px;
+width:40px;
+height: 40px;
+font-size: 23px;
+color: #566;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+}
+ul li span:hover{
+ background-color: #c1a1d3;
+ color: #fff;
+}

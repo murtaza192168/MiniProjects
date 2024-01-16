@@ -1,0 +1,20 @@
+#qr-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16rem;
+    /* margin: 5px;
+    padding: 33px 0; */
+  }
+  #Generate {
+    background-color: #3498db;
+    /* transition: height ease; */
+    padding: 20px;
+    border-radius: 2rem;
+    height: 300px;
+  }
+  @media screen and (max-width: 414px) {
+    #Generate {
+      height: 400px;
+    }
+  }
